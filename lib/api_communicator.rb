@@ -16,7 +16,9 @@ uri.query = URI.encode_www_form({
 request = Net::HTTP::Get.new(uri.request_uri)
 
 @result = JSON.parse(http.request(request).body)
-binding.pry
+
+
+
 # puts @result
 
 # JSON.parse(@result)
