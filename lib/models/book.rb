@@ -4,7 +4,6 @@ class Book < ActiveRecord::Base
 
   def get_books
     @result["results"].each do |book|
-        binding.pry
       book
     end
   end
@@ -51,15 +50,18 @@ class Book < ActiveRecord::Base
     self.get_all_titles_by_author(author_name).count
   end
 
-#WORK ON GETTING DESCRIPTION OF A BOOK TITLE & CONNECTING WITH CLI
+# WORK ON GETTING DESCRIPTION OF A BOOK TITLE & CONNECTING WITH CLI
 
-  # def self.get_description(book_title)
-  #   get_books.find do |book|
-  #     binding.pry
-  #     book["title"] == book_title
-  #   end
-  #   # title["description"]
-  # end
+  def get_description(book_title)
+    get_books.find do |book|
+      book["title"] == book_title
+    end
+    title["description"]
+  end
 
 
 end #end class
+
+get_description("A HIDDEN ENEMY")
+binding.pry
+0
