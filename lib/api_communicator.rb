@@ -15,7 +15,7 @@ while offset < 1574 do
 
   uri.query = URI.encode_www_form({
     "api-key" => "5f628fe712a24773937bee868495c7aa",
-    # "publisher" => "Scholastic"
+    "publisher" => "HarperCollins"
   })
 
   request = Net::HTTP::Get.new(uri.request_uri)

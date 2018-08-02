@@ -1,12 +1,13 @@
 require_relative '../config/environment.rb'
 
 require_relative "../lib/api_communicator.rb"
-require_relative "../lib/command_line_interface.rb"
+# require_relative "/command_line_interface.rb"
 
 require 'pry'
 
 def get_books
   @result[0].each do |book|
+    binding.pry
     book
   end
 end
@@ -38,4 +39,4 @@ def create_books
   end
 end
 
-# create_books
+create_books

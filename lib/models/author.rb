@@ -14,31 +14,4 @@ class Author < ActiveRecord::Base
 
 
 
-#Raymond E Feist
-# def self.check_for_author(author)
-#   if Author.where(name: author)
-#
-#   else
-#
-#   end
-# end
-#
-# def self.author_present?(author)
-#   if Author.find_by(name: author)
-#     "Your author, #{author}, has made it on the Best Seller's list!"
-#   else
-#     "Sorry! #{author} has yet to make it on the Best Seller's!"
-#   end
-# end
-#
-# def self.get_author_id(author)
-#   if Author.find_by(name: author)
-#     Author.id
-#   else
-#     "Sorry! We couldn't find your author in our database."
-#   end
-
-
-
-
 end #end class
